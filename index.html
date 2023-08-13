@@ -44,16 +44,16 @@
         <div class="question-block">
           <p>1</p>
           <fieldset class="question" name="padding-question">
-            <legend>Padding is only used by drag queens.</legend>
+            <legend>HTML Accessibility matters.</legend>
             <ul class="anwers-list">
               <li>
-                <label>True
-                  <input type="radio">
+                <label for="q1-a1">True
+                  <input type="radio" id="q1-a1" name="q1">
                 </label>
-                </li>
+              </li>
               <li>
-                <label>False
-                  <input type="radio">
+                <label for="q1-a2">False
+                  <input type="radio" id="q1-a2" name="q1">
                 </label>
               </li>
             </ul>
@@ -65,13 +65,13 @@
             <legend>Nothing's gonna hurt us.</legend>
             <ul class="anwers-list">
               <li>
-                <label>True
-                  <input type="radio">
+                <label for="q2-a1">True
+                  <input type="radio" id="q2-a1" name="q2">
                 </label>
-                </li>
+              </li>
               <li>
-                <label>False
-                  <input type="radio">
+                <label for="q2-a2">False
+                  <input type="radio" id="q2-a2" name="q2">
                 </label>
               </li>
             </ul>
@@ -80,11 +80,38 @@
       </section>
       <section role="region" aria-labelledby="css-questions">
         <h2 id="css-questions">CSS Questions</h2>
+        <div class="formrow">
+          <div class="question-block">
+            <label for="css-q1">Is CSS used for decoration?</label>
+          </div>
+          <div class="answer">
+            <select name="css-q1">
+              <option value="">Select an option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div class="question-block">
+            <label for="css-q2">Name a pseudo selector.</label>
+          </div>
+          <div class="answer">
+            <textarea rows="5" cols="24" name="css-q2" placeholder="::after"></textarea>
+          </div>
+        </div>
       </section>
+      <button type="submit">Send</button>
     </form>
   </main>
 
 </body>
+<footer>
+  <address>
+    <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+    San Francisco<br />
+    California<br />
+    USA
+  </address>
+</footer>
 
 
 </html>
